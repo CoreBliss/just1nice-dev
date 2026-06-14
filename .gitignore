@@ -23,3 +23,7 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 .env.*
+/bootstrap/cache/config.php
+/bootstrap/cache/routes-v7.php
+/bootstrap/cache/packages.php
+/bootstrap/cache/services.php
