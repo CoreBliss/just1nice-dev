@@ -9,13 +9,12 @@ use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\RestockOrderController;
 use App\Http\Controllers\Api\StoreController;
 use App\Http\Controllers\Api\SupplierController;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/health', function () {
-    return response()->json([
-        'message' => 'OK',
-        'app' => config('app.name'),
-        'time' => now()->toISOString(),
+    return new JsonResponse([
+        'status' => 'ok',
     ]);
 });
 
