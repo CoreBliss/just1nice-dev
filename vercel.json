@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "functions": {
     "api/index.php": {
@@ -12,10 +13,6 @@
       "dest": "/public/favicon.ico"
     },
     {
-      "src": "/build/(.*)",
-      "dest": "/public/build/$1"
-    },
-    {
       "src": "/robots.txt",
       "dest": "/public/robots.txt"
     },
@@ -23,7 +20,5 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "public"
+  ]
 }
